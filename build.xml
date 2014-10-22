@@ -13,7 +13,7 @@
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac srcdir="src" destdir="D:\DevOps\build\classes" />
+		<javac srcdir="test.java" destdir="D:\DevOps\build\classes" />
 		<!--<java  "D:\Dev Ops\build\classes oata.test" />!-->		
 	</target>
 
