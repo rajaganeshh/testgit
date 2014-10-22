@@ -1,4 +1,4 @@
-<project name="first" default ="run">
+<project name="first" default ="run">?
 	<target name= "target1">
 	<echo> First Ant Program </echo>
 	</target> 
@@ -13,7 +13,7 @@
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac srcdir="test.java" destdir="D:\DevOps\build\classes" />
+		<javac srcdir="D:\DevOps\src\test.java" destdir="D:\DevOps\build\classes" />
 		<!--<java  "D:\Dev Ops\build\classes oata.test" />!-->		
 	</target>
 
