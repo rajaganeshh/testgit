@@ -8,18 +8,18 @@
 	</target>
 
 	<target name="init" depends = "target2">
-	<delete dir = "D:\DevOps\build" />
-	<mkdir dir="D:\DevOps\build\classes" />
+	<delete dir = "build" />
+	<mkdir dir="build\classes" />
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac srcdir="D:\DevOps\src\test.java" destdir="D:\DevOps\build\classes" />
+		<javac srcdir="test.java" destdir="build\classes" />
 		<!--<java  "D:\Dev Ops\build\classes oata.test" />!-->		
 	</target>
 
 	<target name="jar" depends ="compile" >
-        <mkdir dir="D:\DevOps\build\jar"/>
-        <jar destfile="D:\DevOps\build\jar\HelloWorld.jar" basedir="D:\DevOps\build\classes">
+        <mkdir dir="build\jar"/>
+        <jar destfile="build\jar\HelloWorld.jar" basedir="build\classes">
             <manifest>
                 <attribute name="Main-Class" value="oata.test"/>
             </manifest>
@@ -27,7 +27,7 @@
     </target>
 
 	<target name="run" depends = "jar">
-        <java jar="D:\DevOps\build\jar\HelloWorld.jar" fork="true"/>
+        <java jar="build\jar\HelloWorld.jar" fork="true"/>
     </target>
 
 
