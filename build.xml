@@ -1,4 +1,4 @@
-<project name="first" default ="run">?
+<project name="first" default ="run">
 	<target name= "target1">
 	<echo> First Ant Program </echo>
 	</target> 
