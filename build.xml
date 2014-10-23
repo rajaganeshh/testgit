@@ -14,7 +14,7 @@
 	
 	<target name = "compile" depends = "init">
 	
-		<javac src="test.java" destdir="build\classes" />
+		<javac srcdir="src" destdir="build\classes" />
 	</target>
 
 	<target name="jar" depends ="compile" >
