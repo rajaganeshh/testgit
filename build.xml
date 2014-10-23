@@ -11,7 +11,7 @@
 	<delete dir = "build" />
 	<delete dir ="src" />
 	<mkdir dir="build\classes" />
-	<copy src="test.java" dest="src\test.java"/>
+	<copyfile src="test.java" dest="src\test.java"/>
 	</target>
 	
 	<target name = "compile" depends = "init">
