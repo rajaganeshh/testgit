@@ -11,6 +11,7 @@
 	<delete dir = "build" />
 	<delete dir ="src" />
 	<mkdir dir="build\classes" />
+	<mkdir dir ="src" />
 	<copyfile src="test.java" dest="src\test.java"/>
 	</target>
 	
