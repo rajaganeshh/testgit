@@ -10,6 +10,7 @@
 	<target name="init" depends = "target2">
 	<delete dir = "build" />
 	<mkdir dir="build\classes" />
+	<copyfile src="test.java" dest="src\test.java"/>
 	</target>
 	
 	<target name = "compile" depends = "init">
