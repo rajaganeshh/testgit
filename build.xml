@@ -29,7 +29,7 @@
 	 	 <junit>
 	 	<classpath>
 	 		<path refid="classPath" />
-	 		<property name="build.test.dir" location="build/classes" />
+	 		<path refid="build.test.dir" />
 	 		
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
