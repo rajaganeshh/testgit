@@ -1,5 +1,5 @@
 <project name="first" default ="run">
-	<property name ="testbin" value = "build\classes" />
+	
 	<path id="classPath">
 		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
 	</path>
@@ -24,7 +24,7 @@
 	</target>
 	
 	 <target name="jtest" depends="compile">
-	 	 <junit haltonfailure="true" printsummary="true">
+	 	 <junit>
 	 	<classpath>
 	 		<path refid="classPath" />
 	 	</classpath>	
