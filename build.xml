@@ -24,9 +24,9 @@
 	</target>
 	
 	 <target name="jtest" depends="compile">
-	 	 <junit>
+	 	 <junit haltonfailure="true" printsummary="true">
 	 	<classpath refid="classPath" />
-		 <formatter type="brief" usefile="false" />
+		 <formatter type="brief" usefile="true" />
     		<test name="sonadev"/>
     		</junit>
     	</target>
@@ -35,7 +35,7 @@
         <mkdir dir="build\jar"/>
         <jar destfile="build\jar\HelloWorld.jar" basedir="build\classes">
             <manifest>
-                <attribute name="Main-Class" value="oata.test"/>
+                <attribute name="Main-Class" value="oata.sonadev"/>
             </manifest>
         </jar>
     </target>
