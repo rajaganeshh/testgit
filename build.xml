@@ -1,7 +1,7 @@
 <project name="first" default ="run">
 	<path id="classPath">
 		<property name ="testbin" value = "build\classes" />
-		<property name = "src.dir" value = "src" includes = "*.java" />
+		
     		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
 	</path>
 	<target name= "target1">
@@ -28,7 +28,6 @@
 	 	 <junit haltonfailure="true" printsummary="true" showoutput="true">
 	 	<classpath>
 	 		<path refid="classPath" />
-	 		<path refid = "src.dir" />
 	 		<path refid = "testbin" />
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
