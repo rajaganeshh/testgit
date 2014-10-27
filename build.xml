@@ -1,5 +1,5 @@
 <project name="first" default ="run">
-	<property name="build.test.dir" location="build\junit" />
+	
 	<path id="classPath">
 		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
 	
@@ -29,11 +29,10 @@
 	 	 <junit>
 	 	<classpath>
 	 		<path refid="classPath" />
-	 		<path refid="build.test.dir" />
 	 		
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
-		  <test name="oata" />
+		  <test name="oata.sonadev" />
     		</junit>
     	</target>
     
