@@ -14,7 +14,7 @@ System.out.println("Sonata DevOps");
 
 public void testprintmessage()
 {
-  system.out.println("junit is working fine");
+  System.out.println("junit is working fine");
 }
  
 }
