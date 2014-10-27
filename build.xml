@@ -21,7 +21,7 @@
 	</target>
 	
 	 <target name="jtest" depends="compile">
-		 <junit haltonfailure="true" printsummary="true">
+		 <junit haltonfailure="true" printsummary="true"></junit>
     		<test name="test"/>
     	</target>
     
