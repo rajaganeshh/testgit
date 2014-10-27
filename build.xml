@@ -1,5 +1,5 @@
 <project name="first" default ="run">
-	<property name ="testbin" value = "src" includes ="*.java" />
+	<property name ="testbin" value = "src" />
 	<path id="classPath">
 		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
 	</path>
