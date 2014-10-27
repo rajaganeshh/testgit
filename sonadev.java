@@ -1,9 +1,6 @@
 
 package oata;
 
-import org.junit.Test;
-
-
 
 class sonadev {
   @Test
