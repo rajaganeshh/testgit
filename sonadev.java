@@ -8,12 +8,11 @@ public static void main(String[] args) {
   
 System.out.println("Hello World");
 System.out.println("Sonata DevOps");
-testraja testprint = new testraja();
+sonadev testprint = new sonadev();
 testprint.testprintmessage();
 }
-}
-public class testraja
-{
+
+@Test
 public void testprintmessage()
 {
   System.out.println("junit is working fine");
