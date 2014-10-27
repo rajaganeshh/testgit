@@ -11,6 +11,7 @@ System.out.println("Sonata DevOps");
 sonadev testprint = new sonadev();
 testprint.testprintmessage();
 }
+}
 
 public void testprintmessage()
 {
