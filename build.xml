@@ -1,8 +1,7 @@
 <project name="first" default ="run">
+	<property name ="testbin" value = "build\classes" />
 	<path id="classPath">
-		<property name ="testbin" value = "build\classes" />
-		
-    		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
+		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
 	</path>
 	<target name= "target1">
 	<echo> First Ant Program </echo>
