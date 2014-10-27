@@ -33,7 +33,7 @@
     		</junit>
     	</target>
     
-	<target name="jar" depends ="jar" >
+	<target name="jar" depends ="jtest" >
         <mkdir dir="build\jar"/>
         <jar destfile="build\jar\HelloWorld.jar" basedir="build\classes">
             <manifest>
