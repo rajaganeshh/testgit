@@ -30,7 +30,7 @@
 	 		<path refid="testbin" />
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
-		 <includes ="*.class" />
+		 <include name ="*.class" />
 		 <test name="oata.sonadev"/>
     		</junit>
     	</target>
