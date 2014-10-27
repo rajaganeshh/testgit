@@ -24,8 +24,11 @@
 	</target>
 	
 	 <target name="jtest" depends="compile">
-		 <junit haltonfailure="true" printsummary="true"></junit>
+	 	 <junit>
+	 	<classpath refid="classPath" />
+		 <haltonfailure="true" printsummary="true">
     		<test name="test"/>
+    		</junit>
     	</target>
     
 	<target name="jar" depends ="jtest" >
