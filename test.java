@@ -1,7 +1,5 @@
 package oata;
 
-import org.junit.framework.*;
-
 
 class test {
     public static void main(String[] args) {
