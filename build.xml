@@ -15,7 +15,7 @@
 	<delete dir ="src" />
 	<mkdir dir="build\classes" />
 	<mkdir dir ="src" />
-	<copyfile src="test.java" dest="src\test.java"/>
+	<copyfile src="sonadev.java" dest="src\sonadev.java"/>
 	</target>
 	
 	<target name = "compile" depends = "init">
@@ -27,7 +27,7 @@
 	 	 <junit>
 	 	<classpath refid="classPath" />
 		 <formatter type="brief" usefile="false" />
-    		<test name="test"/>
+    		<test name="sonadev"/>
     		</junit>
     	</target>
     
