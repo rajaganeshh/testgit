@@ -12,7 +12,7 @@ sonadev testprint = new sonadev();
 testprint.testprintmessage();
 }
 
-@Test
+
 public void testprintmessage()
 {
   System.out.println("junit is working fine");
