@@ -5,6 +5,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import junit.framework.JUnit4TestAdapter;
 
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+   TestHelloWorld.class  // Add test classes here.
+})
 
 public class sonadev {
   
