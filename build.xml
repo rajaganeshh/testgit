@@ -27,7 +27,7 @@
 	 	 <junit haltonfailure="true" printsummary="true">
 	 	<classpath refid="classPath" />
 		 <formatter type="brief" usefile="true" />
-    		<test name="oata"/>
+    		<test name="oata.sonadev"/>
     		</junit>
     	</target>
     
