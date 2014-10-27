@@ -29,13 +29,13 @@
 	 		<path refid="classPath" />
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
-		 <test name="oata"/>
+		 <test name="oata.sonata"/>
     		</junit>
     	</target>
     
 	<target name="jar" depends ="jtest" >
         <mkdir dir="build\jar"/>
-        <jar destfile="build\jar\HelloWorld.jar" basedir="build\classes">
+        <jar destfile="build\jar\testsonata.jar" basedir="build\classes">
             <manifest>
                 <attribute name="Main-Class" value="oata.sonadev"/>
             </manifest>
@@ -43,7 +43,7 @@
     </target>
 
 	<target name="run" depends = "jar">
-        <java jar="build\jar\HelloWorld.jar" fork="true"/>
+        <java jar="build\jar\testsonata.jar" fork="true"/>
     </target>
 
 
