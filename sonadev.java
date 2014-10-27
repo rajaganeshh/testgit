@@ -8,7 +8,7 @@ public static void main(String[] args) {
   
 System.out.println("Hello World");
 System.out.println("Sonata DevOps");
-sonadev testprint = new sonadev()
+sonadev testprint = new sonadev();
 testprint.testprintmessage();
 }
 
