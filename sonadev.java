@@ -1,7 +1,7 @@
 
 package oata;
 
-import oata.Test;
+
 
 public class sonadev {
   
@@ -11,7 +11,7 @@ System.out.println("Hello World");
 System.out.println("Sonata DevOps");
 }
 
-@Test
+
 public void testprintmessage()
 {
   system.out.println("junit is working fine");
