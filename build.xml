@@ -2,6 +2,7 @@
 	
 	<path id="classPath">
 		<pathelement location="C:\Program Files\junit\junit-4.11.jar" />
+	
 	</path>
 	<target name= "target1">
 	<echo> First Ant Program </echo>
@@ -27,9 +28,10 @@
 	 	 <junit>
 	 	<classpath>
 	 		<path refid="classPath" />
+	 		
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
-		 <test name="build\classes\oata\" include name ="*"/>
+		  <test name="oata" />
     		</junit>
     	</target>
     
