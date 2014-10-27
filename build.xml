@@ -26,7 +26,7 @@
 	 <target name="jtest" depends="compile">
 	 	 <junit>
 	 	<classpath refid="classPath" />
-		 <haltonfailure="true" printsummary="true">
+		 <haltonfailure="true" printsummary="true" />
     		<test name="test"/>
     		</junit>
     	</target>
