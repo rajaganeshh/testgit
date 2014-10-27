@@ -29,7 +29,7 @@
 	 		<path refid="classPath" />
 	 	</classpath>	
 		 <formatter type="brief" usefile="false" />
-		 <test name="oata.sonata"/>
+		 <test name="build\classes\oata\" includes ="*"/>
     		</junit>
     	</target>
     
