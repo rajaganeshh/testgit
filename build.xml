@@ -1,7 +1,7 @@
 <project name="first" default ="run">
 	
 	<path id="classPath">
-		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib\ant-junit4.jar" />
+		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib\junit-4.11.jar" />
 	
 	</path>
 	<target name= "target1">
