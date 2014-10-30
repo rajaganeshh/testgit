@@ -1,7 +1,7 @@
 <project name="first" default ="run">
 	
 	<path id="classPath">
-		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib\*.jar" />
+		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4" />
 		
 	</path>
 	<target name= "target1">
@@ -29,7 +29,9 @@
 	 <target name="jtest" depends="compile">
 	 	 <junit printsummary="yes" haltonfailure="no">
 	 	<classpath refid="classPath" />
-	  	
+	  		<filset = "${lib}">
+	  			<include name ="**/*.jar"></include>
+	  		</filset>
 		 <formatter type="brief" usefile="false" />
 		 <batchtest fork="yes">
 		 	<fileset dir="build">
