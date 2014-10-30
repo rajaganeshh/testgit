@@ -30,6 +30,11 @@
 	 	<classpath refid="classPath" />
 	  		
 		 <formatter type="brief" usefile="false" />
+		 <batchtest fork="yes">
+		 	<fileset dir="src">
+		 		<include name="*.java"/>
+		 	</fileset>
+		 </batchtest>
 		  <test name="sonadev" />
     		</junit>
     	</target>
