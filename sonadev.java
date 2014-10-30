@@ -3,7 +3,7 @@ package oata;
 
 //import.junit.framework.TestCase;
 
-public class sonadev extends TestCase {
+public class sonadev  {
   
 public static void main(String[] args) {
   
