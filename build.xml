@@ -1,8 +1,8 @@
 <project name="first" default ="run">
 	
 	<path id="classPath">
-		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib" />
-		<includes="*.jar"/>
+		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib\*.jar" />
+		
 	</path>
 	<target name= "target1">
 	<echo> First Ant Program </echo>
