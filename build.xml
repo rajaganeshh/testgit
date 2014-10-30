@@ -19,11 +19,11 @@
 	<mkdir dir="build\junit" />
 	<mkdir dir ="src" />
 	<copyfile src="sonadev.java" dest="src\sonadev.java"/>
-	<copyfile src="ThingTester.java" dest="src\ThingTester.java"/>
+	<copyfile src="ThingTester.java" dest="build\"/>
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac includeantruntime="false" src="sonadev.java" destdir="build\classes" />
+		<javac includeantruntime="false" src="src" destdir="build\classes" />
 	</target>
 	
 	 <target name="jtest" depends="compile">
@@ -32,7 +32,7 @@
 	  		
 		 <formatter type="brief" usefile="false" />
 		 <batchtest fork="yes">
-		 	<fileset dir="src">
+		 	<fileset dir="build">
 		 		<include name="*Test*.java"/>
 		 	</fileset>
 		 </batchtest>
