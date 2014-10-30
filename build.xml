@@ -29,9 +29,9 @@
 	 <target name="jtest" depends="compile">
 	 	 <junit printsummary="yes" haltonfailure="no">
 	 	<classpath refid="classPath" />
-	  		<filset = "${lib}">
+	  		<fileset = "${lib}">
 	  			<include name ="**/*.jar"></include>
-	  		</filset>
+	  		</fileset>
 		 <formatter type="brief" usefile="false" />
 		 <batchtest fork="yes">
 		 	<fileset dir="build">
