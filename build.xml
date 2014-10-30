@@ -19,6 +19,7 @@
 	<mkdir dir="build\junit" />
 	<mkdir dir ="src" />
 	<copyfile src="sonadev.java" dest="src\sonadev.java"/>
+	<copyfile src="ThingTester.java" dest="src\ThingTester.java"/>
 	</target>
 	
 	<target name = "compile" depends = "init">
