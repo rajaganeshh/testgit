@@ -23,7 +23,7 @@
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac includeantruntime="false" srcdir="sonadev.java" destdir="build\classes" />
+		<javac includeantruntime="false" src="sonadev.java" destdir="build\classes" />
 	</target>
 	
 	 <target name="jtest" depends="compile">
