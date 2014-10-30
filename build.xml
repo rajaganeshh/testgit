@@ -29,8 +29,7 @@
 	 	 <junit>
 	 	<classpath>
 	 		<path refid="classPath" />
-	 		
-	 	</classpath>	
+	  	</classpath>	
 		 <formatter type="brief" usefile="false" />
 		  <test name="oata.sonadev" />
     		</junit>
