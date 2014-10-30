@@ -30,7 +30,7 @@
 	 	 <junit printsummary="yes" haltonfailure="no">
 	 	<classpath refid="classPath" />
 	  		<fileset dir="lib" >
-	  			<includes="*.jar" />
+	  			<include name="*.jar" />
 	  		</fileset>
 		 <formatter type="brief" usefile="false" />
 		 <batchtest fork="yes">
