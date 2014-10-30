@@ -32,10 +32,10 @@
 		 <formatter type="brief" usefile="false" />
 		 <batchtest fork="yes">
 		 	<fileset dir="src">
-		 		<include name="*Test.java"/>
+		 		<include name="*Test*.java"/>
 		 	</fileset>
 		 </batchtest>
-		  <test name="sonadev" />
+		 
     		</junit>
     	</target>
     
