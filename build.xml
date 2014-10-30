@@ -23,7 +23,7 @@
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac includeantruntime="false" src="src" destdir="build\classes" />
+		<javac includeantruntime="false" srcdir="src" destdir="build\classes" />
 	</target>
 	
 	 <target name="jtest" depends="compile">
