@@ -1,7 +1,7 @@
 
 package oata;
 
-import.junit.framework.TestCase;
+//import.junit.framework.TestCase;
 
 public class sonadev extends TestCase {
   
