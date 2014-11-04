@@ -1,0 +1,59 @@
+<project name="first" default ="run">
+	
+	<path id="classPath">
+		<pathelement location="D:\DevOps\ant\apache-ant-1.9.4\lib\*.jar" />
+		
+	</path>
+	<target name= "target1">
+	<echo> First Ant Program </echo>
+	</target> 
+	
+	<target name= "target2" depends = "target1">
+	<echo> this is target </echo>
+	</target>
+
+	<target name="init" depends = "target2">
+	<delete dir = "build" />
+	<delete dir ="src" />
+	<mkdir dir="build\classes" />
+	<mkdir dir="build\junit" />
+	<mkdir dir ="src" />
+	<copyfile src="sonadev.java" dest="src\sonadev.java"/>
+	<copyfile src="ThingTester.java" dest="build\ThingTester.java"/>
+	</target>
+	
+	<target name = "compile" depends = "init">
+		<javac includeantruntime="false" srcdir="src" destdir="build\classes" />
+	</target>
+	
+	 <target name="jtest" depends="compile">
+	 	 <junit printsummary="yes" haltonfailure="no">
+	 	<classpath refid="classPath" />
+	  	
+		 <formatter type="brief" usefile="false" />
+		 <batchtest fork="yes">
+		 	<fileset dir="build">
+		 		<include name="*Test*.java"/>
+		 	</fileset>
+		 </batchtest>
+		 
+    		</junit>
+    	</target>
+    
+	<target name="jar" depends ="jtest" >
+        <mkdir dir="build\jar"/>
+        <jar destfile="build\jar\testsonata.jar" basedir="build\classes">
+            <manifest>
+                <attribute name="Main-Class" value="oata.sonadev"/>
+            </manifest>
+        </jar>
+    </target>
+
+	<target name="run" depends = "jar">
+        <java jar="build\jar\testsonata.jar" fork="true"/>
+    </target>
+
+
+	
+</project>
+
